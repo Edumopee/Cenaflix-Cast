@@ -1,44 +1,39 @@
-🎙️ Cenacast (Sistema de Cadastro de Podcasts)
-Status do Projeto
-Em desenvolvimento
+# 🎙️ Cenaflix-CAST (Sistema de Cadastro de Podcasts)
 
-💡 Sobre o Projeto
-Este sistema foi desenvolvido como atividade prática para o curso de Análise e Desenvolvimento de Sistemas do SENAC. O objetivo é criar uma plataforma robusta para o gerenciamento e cadastro de episódios de podcasts, utilizando conceitos de segurança (login/níveis de acesso) e arquitetura de software (MVC/JPA).
+## Status do Projeto
+**Em desenvolvimento**
 
-🔑 Autenticação e Níveis de Acesso
-O sistema possui uma tela de Login que autentica os usuários no banco de dados, controlando o acesso com base em três níveis de permissão:
+---
 
-Nível de Usuário	Restrições e Permissões
-Administrador	Acesso total a todas as funcionalidades.
-Operador	Permissões de gerenciamento limitadas (Ex: Cadastro e edição).
-Usuário Comum	Acesso restrito apenas à visualização (botão de cadastro oculto).
+## 💡 Sobre o Projeto
+Este projeto foi desenvolvido como **atividade prática** para o curso de **Análise e Desenvolvimento de Sistemas** do SENAC.
 
-Exportar para as Planilhas
-✨ Funcionalidades Principais
-Após o login, o sistema permite:
+Trata-se de um sistema simples para **cadastro e gerenciamento de episódios de podcast**, com foco em **autenticação de usuários** e **níveis de acesso**.
 
-Listagem de Podcasts: Tela principal que exibe todos os episódios cadastrados.
+### Funcionalidades e Requisitos
+O sistema implementa os seguintes requisitos da atividade:
 
-Busca Dinâmica: Campo de busca que filtra os resultados da listagem em tempo real com base no Produtor.
+* **Autenticação e Segurança:** Tela de Login que autentica usuários, buscando dados no banco.
+* **Níveis de Acesso:** Implementação de 3 níveis de usuários (**Administrador**, **Operador** e **Usuário**), onde algumas funcionalidades (como o botão Cadastrar) são **restritas** para usuários de nível mais baixo.
+* **Listagem Completa:** Tela de listagem que exibe todos os podcasts cadastrados.
+* **Busca Dinâmica:** Campo de busca que filtra a lista de podcasts **por Produtor**.
+* **Cadastro Detalhado:** Tela de cadastro para preenchimento dos seguintes campos: **Produtor**, **Nome do Episódio**, **Número do Episódio**, **Duração** e **URL do Repositório**.
+* **Navegação:** Botão de **Ver Listagem** na tela de cadastro para retornar ao *dashboard*.
 
-Cadastro de Episódios:
+---
 
-Acesso restrito por nível de usuário.
+## 🛠️ Tecnologias e Arquitetura
 
-Campos: Produtor, Nome do Episódio, Número do Episódio, Duração e URL do Repositório.
+| Tecnologia/Padrão | Finalidade |
+| :--- | :--- |
+| **Java** | Linguagem de programação (Utilizando a IDE NetBeans). |
+| **MySQL (Workbench)** | Banco de dados relacional para persistência de dados. |
+| **Java Swing** | Utilizado para a criação das telas da interface gráfica (GUI). |
+| **Padrão MVC** | Arquitetura utilizada para separar o Modelo (dados), Visão (telas) e Controlador (lógica). |
+| **JPA (Java Persistence API)** | Framework de persistência de dados, utilizado para gerenciar a conexão com o banco. |
+| **Maven** | Gerenciador de dependências e automação de *build*. |
 
-Botões para confirmar o cadastro e voltar para a tela de listagem.
+---
 
-🛠️ Stack Tecnológica e Arquitetura
-Este projeto foi construído focando na aplicação de padrões de mercado.
-
-Categoria	Tecnologia	Detalhes Técnicos
-Linguagem/Interface	Java (NetBeans)	Utilização de Java Swing para a criação das telas de interface (GUI).
-Arquitetura	Padrão MVC	Separação clara entre Modelo, Visão e Controlador.
-Persistência (BD)	MySQL Workbench	Banco de dados relacional para persistência de dados.
-Conexão Avançada	JPA (Java Persistence API)	Uso de JPA para mapeamento objeto-relacional (ORM), substituindo o JDBC direto.
-Gerenciamento	Maven	Gerenciador de dependências e automação de build do projeto.
-
-Exportar para as Planilhas
-🧑‍💻 Desenvolvedor
-Eduardo Moreno Pereira
+## 🧑‍💻 Desenvolvedor
+**Eduardo Moreno Pereira**
